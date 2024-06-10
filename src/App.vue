@@ -1,6 +1,6 @@
 <script>
 import ProjectList from './components/ProjectList.vue';
-export default{
+export default {
   components:{
     ProjectList
   }
@@ -8,7 +8,9 @@ export default{
 </script>
 
 <template>
-    <ProjectList></ProjectList>
+    <div class="container">
+        <ProjectList></ProjectList>
+    </div>
 </template>
 
 <style lang="scss">
