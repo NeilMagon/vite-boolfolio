@@ -1,15 +1,16 @@
 <script>
-import ProjectList from './components/ProjectList.vue';
+import AppHeader from './components/AppHeader.vue';
 export default {
   components:{
-    ProjectList
+    AppHeader
   }
 }
 </script>
 
 <template>
     <div class="container">
-        <ProjectList></ProjectList>
+      <AppHeader></AppHeader>
+      <router-view></router-view>
     </div>
 </template>
 

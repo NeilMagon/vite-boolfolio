@@ -29,7 +29,7 @@
 <template>
     <h1>Project List</h1>
     <div class="row row-cols-3">
-    <SingleProject v-for="project in projects" :projectInfo="project"></SingleProject>
+        <SingleProject v-for="project in projects" :projectInfo="project"></SingleProject>
     </div>
 </template>
 

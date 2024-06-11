@@ -13,7 +13,9 @@
             <div class="card-body">
                 <h3 class="card-title">{{ projectInfo.name }}</h3>
                 <p class="card-text">{{ projectInfo.client_name }}</p>
-                <p class="card-text">{{ projectInfo.summary }}</p>
+                <p v-if="projectInfo.type"  class="card-text">{{ projectInfo.type.name }}</p>
+                <p v-if="projectInfo.technologies" class="card-text">{{ projectInfo.technologies.name }}</p>
+                <p v-if="projectInfo.summary" class="card-text">{{ projectInfo.summary }}</p>
             </div>
         </div>
     </div>
