@@ -12,7 +12,7 @@
             getSingleProject(){
                 axios.get(`http://127.0.0.1:8000/api/projects/${this.$route.params.slug}`)
                 .then((response) => {
-                    this.project = response.data.project;
+                    this.project = response.data.results;
                 });
             }
         },
